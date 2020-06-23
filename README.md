@@ -51,16 +51,28 @@ git clone https://github.com/Manas-Chamola/react-slack-chat-app.git
 Create a new Firebase Project
 
 ### 3.
-Create an `env.local` file, add your firebase credentials like this
+Create an `firebase.js` file in src folder, add your firebase credentials like this
 
 ```
-REACT_APP_apiKey=[API_KEY]
-REACT_APP_authDomain=[AUTH_DOMAIN]
-REACT_APP_databaseURL=[DATABASE_URL]
-REACT_APP_projectId=[PROJECT_ID]
-REACT_APP_storageBucket=[STORAGE_BUCKET_ID]
-REACT_APP_messagingSenderId=[MESSAGE_SENDER_ID]
-REACT_APP_appId=[APP_ID]
+import firebase from 'firebase/app';
+import "firebase/auth";
+import "firebase/database";
+import "firebase/storage";
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: [API_KEY],
+  authDomain: [AUTH_DOMAIN],
+  databaseURL: [DATABASE_URL],
+  projectId: [PROJECT_ID],
+  storageBucket: [STORAGE_BUCKET],
+  messagingSenderId: [MESSAGING_SENDER_ID],
+  appId: [AUTH_DOMAIN]
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+export default firebase;
 
 ```
 
