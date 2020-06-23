@@ -1,24 +1,28 @@
 # Slack Chat Application
 
-##Details
+## Details
 This application is build with the help of React and Redux and utilizes some of their core features.
 It has a Login page, Logout page and a Chat page which has multiple panels.
 It has features similar to live chat applications. 
 It uses firebase database to store all the data. 
 
-##Screenshots
+## Screenshots
 
 ![alt text](https://github.com/Manas-Chamola/react-slack-chat-app/blob/master/demo_images/Chat_Page.jpg?raw=true)
 
+
 ![alt text](https://github.com/Manas-Chamola/react-slack-chat-app/blob/master/demo_images/Avatar.jpg?raw=true)
+
 
 ![alt text](https://github.com/Manas-Chamola/react-slack-chat-app/blob/master/demo_images/Search.jpg?raw=true)
 
+
 ![alt text](https://github.com/Manas-Chamola/react-slack-chat-app/blob/master/demo_images/Typing.jpg?raw=true)
+
 
 ![alt text](https://github.com/Manas-Chamola/react-slack-chat-app/blob/master/demo_images/Emoji.jpg?raw=true)
 
-##Features
+## Features
 
 * Authentication
 * Multiple Channels
@@ -34,19 +38,19 @@ It uses firebase database to store all the data.
 * Typing Notification
 * Top Poster
 
-##Demo: [Click Here](https://react-slack-app-e4588.web.app/)
+## Demo: [Click Here](https://react-slack-app-e4588.web.app/)
 
-##Setup
+## Setup
 
-###1.
+### 1.
 ```
 git clone https://github.com/Manas-Chamola/react-slack-chat-app.git
 ``` 
 
-###2.
+### 2.
 Create a new Firebase Project
 
-###3.
+### 3.
 Create an `env.local` file, add your firebase credentials like this
 
 ```
@@ -60,7 +64,7 @@ REACT_APP_appId=[APP_ID]
 
 ```
 
-###4.
+### 4.
 
 ```
 npm start
